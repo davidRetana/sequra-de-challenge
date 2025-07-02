@@ -1,0 +1,1 @@
+I usually organize infraestructure in a different way but in order to keep things simple, i created a single file with all the information there.

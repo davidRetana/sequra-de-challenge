@@ -1,0 +1,293 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "properties": {
+    "fairings": {
+      "type": "object",
+      "properties": {
+        "reused": {
+          "type": "boolean"
+        },
+        "recovery_attempt": {
+          "type": "boolean"
+        },
+        "recovered": {
+          "type": "boolean"
+        },
+        "ships": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "reused",
+        "recovery_attempt",
+        "recovered",
+        "ships"
+      ]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "patch": {
+          "type": "object",
+          "properties": {
+            "small": {
+              "type": "string"
+            },
+            "large": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "small",
+            "large"
+          ]
+        },
+        "reddit": {
+          "type": "object",
+          "properties": {
+            "campaign": {
+              "type": "null"
+            },
+            "launch": {
+              "type": "null"
+            },
+            "media": {
+              "type": "null"
+            },
+            "recovery": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "campaign",
+            "launch",
+            "media",
+            "recovery"
+          ]
+        },
+        "flickr": {
+          "type": "object",
+          "properties": {
+            "small": {
+              "type": "array",
+              "items": {}
+            },
+            "original": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "small",
+            "original"
+          ]
+        },
+        "presskit": {
+          "type": "null"
+        },
+        "webcast": {
+          "type": "string"
+        },
+        "youtube_id": {
+          "type": "string"
+        },
+        "article": {
+          "type": "string"
+        },
+        "wikipedia": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "patch",
+        "reddit",
+        "flickr",
+        "presskit",
+        "webcast",
+        "youtube_id",
+        "article",
+        "wikipedia"
+      ]
+    },
+    "static_fire_date_utc": {
+      "type": "string"
+    },
+    "static_fire_date_unix": {
+      "type": "integer"
+    },
+    "net": {
+      "type": "boolean"
+    },
+    "window": {
+      "type": "integer"
+    },
+    "rocket": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "failures": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "time": {
+              "type": "integer"
+            },
+            "altitude": {
+              "type": "null"
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "time",
+            "altitude",
+            "reason"
+          ]
+        }
+      ]
+    },
+    "details": {
+      "type": "string"
+    },
+    "crew": {
+      "type": "array",
+      "items": {}
+    },
+    "ships": {
+      "type": "array",
+      "items": {}
+    },
+    "capsules": {
+      "type": "array",
+      "items": {}
+    },
+    "payloads": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "launchpad": {
+      "type": "string"
+    },
+    "flight_number": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "date_utc": {
+      "type": "string"
+    },
+    "date_unix": {
+      "type": "integer"
+    },
+    "date_local": {
+      "type": "string"
+    },
+    "date_precision": {
+      "type": "string"
+    },
+    "upcoming": {
+      "type": "boolean"
+    },
+    "cores": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "core": {
+              "type": "string"
+            },
+            "flight": {
+              "type": "integer"
+            },
+            "gridfins": {
+              "type": "boolean"
+            },
+            "legs": {
+              "type": "boolean"
+            },
+            "reused": {
+              "type": "boolean"
+            },
+            "landing_attempt": {
+              "type": "boolean"
+            },
+            "landing_success": {
+              "type": "null"
+            },
+            "landing_type": {
+              "type": "null"
+            },
+            "landpad": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "core",
+            "flight",
+            "gridfins",
+            "legs",
+            "reused",
+            "landing_attempt",
+            "landing_success",
+            "landing_type",
+            "landpad"
+          ]
+        }
+      ]
+    },
+    "auto_update": {
+      "type": "boolean"
+    },
+    "tbd": {
+      "type": "boolean"
+    },
+    "launch_library_id": {
+      "type": "null"
+    },
+    "id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "fairings",
+    "links",
+    "static_fire_date_utc",
+    "static_fire_date_unix",
+    "net",
+    "window",
+    "rocket",
+    "success",
+    "failures",
+    "details",
+    "crew",
+    "ships",
+    "capsules",
+    "payloads",
+    "launchpad",
+    "flight_number",
+    "name",
+    "date_utc",
+    "date_unix",
+    "date_local",
+    "date_precision",
+    "upcoming",
+    "cores",
+    "auto_update",
+    "tbd",
+    "launch_library_id",
+    "id"
+  ]
+}
